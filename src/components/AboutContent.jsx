@@ -1,18 +1,13 @@
 import React from "react";
-import AboutImage from "../../assets/about-image.png";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { IoColorFilterOutline } from "react-icons/io5";
 import { FiEdit } from "react-icons/fi";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import Navbar from "../Navbar";
+import AboutImage from "../assets/about-image.png"
 
-import Footer from "../Footer";
-import Features from "../Features";
-
-const About = () => {
+const AboutContent = () => {
   return (
     <div>
-      <Navbar />
       <section class="bg-gray-50 py-16 mt-[150px]">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-4">
           <div class="md:w-1/2 space-y-6">
@@ -29,19 +24,22 @@ const About = () => {
             <ul class="space-y-2 text-blue-500">
               <li className="flex gap-x-3 mt-3">
                 {" "}
-                <IoColorFilterOutline  className="text-pink-500 text-xl"/> Stylish & customizable templates
+                <IoColorFilterOutline className="text-pink-500 text-xl" />{" "}
+                Stylish & customizable templates
               </li>
               <li className="flex gap-x-3 mt-3">
-                <FiEdit  className="text-pink-500 text-xl"/> Real-time preview while editing
+                <FiEdit className="text-pink-500 text-xl" /> Real-time preview
+                while editing
               </li>
               <li className="flex gap-x-3 mt-3">
                 {" "}
-                <FaCloudDownloadAlt  className="text-pink-500 text-xl"/> Export as PDF instantly
+                <FaCloudDownloadAlt className="text-pink-500 text-xl" /> Export
+                as PDF instantly
               </li>
               <li className="flex gap-x-3 mt-3">
                 {" "}
-                <FaRegFilePdf className="text-pink-500 text-xl" /> Perfect for students, professionals, and job
-                seekers
+                <FaRegFilePdf className="text-pink-500 text-xl" /> Perfect for
+                students, professionals, and job seekers
               </li>
             </ul>
           </div>
@@ -54,13 +52,9 @@ const About = () => {
             />
           </div>
         </div>
-    
       </section>
-
-      <Features />
-      <Footer />
     </div>
   );
 };
 
-export default About;
+export default AboutContent;

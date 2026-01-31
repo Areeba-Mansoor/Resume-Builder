@@ -5,9 +5,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Navbar from "../../Navbar";
 import Footer from "../../Footer";
-import About from "../About";
 import Contact from "../../Contact";
 import Features from "../../Features";
+import AboutContent from "../../AboutContent";
 
 const Home = () => {
   return (
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <About />
+      <AboutContent />
       <Features />
       <Contact />
       <Footer />

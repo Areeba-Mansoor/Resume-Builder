@@ -4,7 +4,7 @@ import Signup from "./components/pages/Signup";
 import Login from "./components/pages/Login";
 import Home from "./components/pages/Home/Home";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
-import About from "./components/pages/About";
+import About from "./components/pages/About/About";
 import CreateResume from "./components/pages/CreateResume";
 import "./App.css";
 
