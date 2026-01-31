@@ -4,6 +4,10 @@ import HeroImage from "../../../assets/hero.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Navbar from "../../Navbar";
+import Footer from "../../Footer";
+import About from "../About";
+import Contact from "../../Contact";
+import Features from "../../Features";
 
 const Home = () => {
   return (
@@ -14,7 +18,6 @@ const Home = () => {
 
         {/* Main Content */}
         <div className="max-w-[1400px] mx-auto mt-[70px] py-10 sm:py-24 px-4 sm:px-10 flex flex-col-reverse lg:flex-row items-center gap-5">
-          
           {/* Left Text Section */}
           <div className="flex-1 ">
             <div className="w-52 sm:w-60  bg-purple-100 p-2 rounded-3xl mb-4  shadow-lg shadow-purple-800/40">
@@ -62,6 +65,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <About />
+      <Features />
+      <Contact />
+      <Footer />
     </>
   );
 };

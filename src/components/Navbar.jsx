@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link to="/generate" onClick={() => setIsOpen(false)}>Generate</Link>
             </li>
             <li className="font-medium text-lg text-purple-700 hover:text-zinc-100 transition-colors duration-300">
-              <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
+              <Link to="/about" onClick={() => setIsOpen(false)} id="#about">About Us</Link>
             </li>
           </ul>
         )}
