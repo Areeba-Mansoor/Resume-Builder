@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../Firebase/firebase";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../navbar";
+import Navbar from "../Navbar";
 
 const Login = () => {
   const navigate = useNavigate();

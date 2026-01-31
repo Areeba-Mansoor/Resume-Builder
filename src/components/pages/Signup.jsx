@@ -1,54 +1,9 @@
-// import { useState } from "react";
-// import { createUserWithEmailAndPassword } from "firebase/auth";
-// import { auth } from "../../Firebase/firebase";
-
-// import React from "react";
-
-// const Signup = () => {
-
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const handleSignup = (e) => {
-//     e.preventDefault();
-//     createUserWithEmailAndPassword(auth, email, password)
-//       .then(() => alert("Signed up!"))
-//       .catch((error) => alert(error.message));
-//   };
-
-//   return (
-//     <>
-//       <div>
-//         <form onSubmit={handleSignup}>
-//           <h2>Signup</h2>
-//           <input
-//             type="email"
-//             placeholder="Email"
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//           />
-//           <br />
-//           <input
-//             type="password"
-//             placeholder="Password"
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//           />
-//           <br />
-//           <button type="submit">Signup</button>
-//         </form>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Signup;
-
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../Firebase/firebase";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../navbar";
+import Navbar from "../Navbar";
 import { SiGnuprivacyguard } from "react-icons/si";
 
 const Signup = () => {
@@ -103,7 +58,7 @@ const Signup = () => {
           <div className="text-center mb-6">
             <h1 className="font-extrabold text-center md:text-3xl mb-2 mb-5 bg-gradient-to-r from-pink-700 to-purple-800 bg-clip-text text-transparent">
               Signup
-              {/* <SiGnuprivacyguard className="text-xl  text-purple-700"/> */}
+              
             </h1>
             <p className="text-gray-500 font-medium text-sm md:text-base">
               Create a new account
